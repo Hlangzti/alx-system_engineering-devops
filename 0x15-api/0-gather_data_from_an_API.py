@@ -1,4 +1,5 @@
- a get request to a REST API '''
+#!/usr/bin/python3
+''' makes a get request to a REST API '''
 import requests
 from sys import argv
 
@@ -13,4 +14,3 @@ if __name__ == '__main__':
           .format(user_data.get('name'),
                   len(completed_tasks), len(user_tasks)))
     [print('\t {}'.format(title)) for title in completed_tasks]
-
